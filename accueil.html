@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a990835d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--CODE HTML class="ma_header" DEBUT-->
+    <header class="ma_header">
+        <a href="accueil.html" class="lien_logo">
+            <img src="images_accueil/logo.png" alt="Logo du site Robbie-Lens." class="site_logo">
+        </a>
+        <input type="checkbox" id="burger-toggle">
+        <label for="burger-toggle" class="burger">&#9776;</label>
+        <nav>
+            <ul class="menu">
+                <li class="list-non-ordonnee"><a href="accueil.html" class="lien_menu">Accueil</a></li>
+                <li class="list-non-ordonnee"><a href="apropos.html" class="lien_menu">À propos</a></li>
+                <li class="list-non-ordonnee"><a href="portfolio.html" class="lien_menu">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--CODE HTML class="ma_header" FIN-->
+    
+    <!--CODE HTML CONTENUE PRINCIPALE DEBUT-->
+    <main>
+        <!--CODE HTML class="container" DEBUT-->
+        <div class="container">
+            <div class="titre-para-btn">
+            <h1 class="titre-niveau1-accueil">Robbie Lens Photographie</h1>
+            <p class="para_accueil">Où <span>professionalisme</span> s’allie avec <span>passion</span>. Depuis plus de 5 ans <!--<br>-->
+            maintenant, j’exerce mon métier avec la passion qui m’anime : <!--<br>-->
+            capturer l’essence de chaque instant.</p>
+            <button class="btn1">UN PROJET ? ÉCRIVEZ-MOI</button>
+            </div>
+            <img src="images_accueil/robbie-lens.png" alt="Photo d'une femme." class="photo">
+        </div>
+        <!--CODE HTML class="container" FIN-->
+
+        <h2 class="titre_niveau2">Mon dernier projet</h2>
+        <!--CODE HTML class="ma_section" DEBUT-->
+        <section class="ma_section">
+            <img src="images_accueil/element-1.png" alt="Image element 1." class="mes_elements">
+            <img src="images_accueil/element-2.png" alt="Image element 2." class="mes_elements">
+            <img src="images_accueil/element-3.png" alt="Image element 3." class="mes_elements">
+            <img src="images_accueil/element-4.png" alt="Image element 4." class="mes_elements">
+            <img src="images_accueil/element-5.png" alt="Image element 5." class="mes_elements">
+            <img src="images_accueil/element-6.png" alt="Image element 6." class="mes_elements">
+        </section>
+        <!--CODE HTML class="ma_section" FIN-->
+
+        <!--CODE HTML class="formulaire" DEBUT-->
+        <section class="formulaire">
+            <h2 class="titre_niveauh2">Parlons de votre projet</h2>
+            <form action="" method="post">
+                <div class="nomEmail">
+                    <div class="my_name">
+                        <label for="">nom</label><br>
+                    <input type="text" name="" id="">
+                    </div>
+
+                    <div class="my_email">
+                        <label for="">email</label><br>
+                    <input type="text" name="" id="">
+                    </div>
+                </div>
+                <label for="">message</label>
+                <textarea name="" id="" cols="138" rows="10"></textarea>
+                <input type="submit" name="" id="">
+            </form>
+        </section>
+        <!--CODE HTML class="formulaire" FIN-->
+    </main>
+    <!--CODE HTML CONTENUE PRINCIPALE FIN-->
+
+    <!--CODE HTML class="ma_footer" DEBUT-->
+    <footer class="ma_footer">
+        <a href="accueil.html" class="lien_logo">
+            <img src="images_accueil/logo.png" alt="Logo du site Robbie-Lens." class="site_logo">
+        </a>
+        <div class="reseaux_socio">
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://translate.google.com/translate%3Fu%3Dhttps://twitter.com/%26hl%3Dfr%26sl%3Den%26tl%3Dfr%26client%3Dsearch&ved=2ahUKEwiGhonhsp2PAxUJ_AIHHR83Lc8Q7gF6BAgKEAo&usg=AOvVaw2XQUq8Mz2JkyyYN6woNLOI" 
+            target="_blank" class="twitter">
+                <img src="images_accueil/twitter.png" alt="Logo twitter du site Robbie-Lens.">
+            </a>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://instagram.com/&ved=2ahUKEwia1onvsp2PAxWc2QIHHWUjHMUQFnoECAoQAQ&usg=AOvVaw0km5FtS86jZAhR5SDIbIei" 
+            target="_blank" class="instagram">
+                <img src="images_accueil/instagram.png" alt="Logo instagram du site Robbie-Lens.">
+            </a>
+        </div>
+    </footer>
+    <!--CODE HTML class="ma_footer" FIN-->
+
+    <!--CODE HTML BOUTON RETOUR EN HAUT DEBUT-->
+    <button id="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i> <!--style="font-size: 16px;"-->
+    </button>
+    <!--CODE HTML BOUTON RETOUR EN HAUT FIN-->
+    <!--CODE JAVASCRIPT DEBUT-->
+    <script>
+        var backToTop = document.getElementById("back-to-top");
+        backToTop.style.display = "none";
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 50) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        });
+        backToTop.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth"});
+        });
+    </script>
+    <!--CODE JAVASCRIPT FIN-->
+</body>
+</html>

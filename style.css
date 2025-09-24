@@ -1,0 +1,618 @@
+/*STYLE CSS MOBILE-FIRST DEBUT*/
+
+/*PARTIE CSS PAGE ACCUEIL.HTML*/
+/*style css class="ma_header" debut*/
+@media screen and (max-width: 768px) {
+    *,
+    *::before,
+    *::after {
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    .ma_header {
+        display: flex; align-items: center; justify-content: space-between;
+        position: relative; margin-top: 1.3rem;
+    }
+
+    .list-non-ordonnee {
+        list-style-type: none; text-align: center;
+    }
+
+    .menu {
+        display: none; gap: 1.3rem; flex-direction: column;
+        justify-content: center;
+    }
+
+    #burger-toggle {
+        display: none;
+    }
+
+    .burger {
+        font-size: 2rem; position: absolute; cursor: pointer;
+        right: 1.3rem;  display: block; color: black;
+    }
+
+    #burger-toggle:checked + .burger + nav .menu {
+        display: flex;
+    }
+
+    .lien_menu {
+        font-size: 1.2rem; text-decoration: none;
+        color: #242424;
+    }
+
+    .lien_menu:hover {
+        text-decoration: underline;
+    }
+
+    .lien_logo {
+        margin-left: 1.3rem;
+    }
+
+    .lien_logo:hover {
+        opacity: 0.5;
+    }
+
+    nav {
+        margin-right: 3.75rem;
+    }
+    /*style css class="ma_header" fin*/
+}
+/*style css class="container" debut*/
+.container {
+    background-color: #1F2039; margin-top: 1.3rem;
+    display: flex; flex-direction: column-reverse;
+    gap: 1.3rem;
+}
+
+.titre-niveau1-accueil {
+    text-align: center; font-size: 1.9rem;
+    color: #A5B4FC;
+}
+
+.para_accueil {
+    font-size: 1.2rem; text-align: center;
+    color: white;
+}
+
+.btn1 {
+    display: block; margin: auto; border-radius: 1.9rem;
+    width: 50%; height: 46px; cursor: pointer;
+}
+
+.titre-para-btn {
+    display: flex; flex-direction: column; gap: 1.3rem;
+}
+
+span {
+    color: #7E8AC5;
+}
+/*style css class="container" fin*/
+.titre_niveau2 {
+    text-align: center; color: #242424;
+    margin-top: 3.12rem; font-size: 1.75rem;
+}
+
+/*style css class="ma_section" debut*/
+.ma_section {
+    margin-top: 3.12rem;
+}
+
+.ma_section {
+    display: flex; flex-direction: column; gap: 0.9375rem; 
+}
+/*style css class="ma_section" fin*/
+
+/*style css class="formulaire" debut*/
+.formulaire {
+    display: flex; flex-direction: column; background-color: #1F2039;
+    padding: 10px; color: white; margin-top: 3.12rem; height: 550px;
+}
+
+form {
+    display: flex; flex-direction: column;
+    margin-top: 3.12rem; gap: 15px;
+}
+
+.titre_niveauh2 {
+    text-align: center; margin-top: 3.12rem;
+}
+
+input[type="submit"] {
+    display: block; margin: auto; width: 30%; height: 35px;
+    border-radius: 25px; border: none; margin-top: 0.94rem;
+    background-color: #8282B1; color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #6e6ea8;
+}
+
+input[type="text"] {
+    width: 100%; height: 30px;
+}
+/*style css class="formulaire" fin*/
+
+/*style css class="ma_footer" debut*/
+.ma_footer {
+    margin-top: 3.12rem;
+}
+
+.ma_footer {
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+.reseaux_socio {
+    margin-right: 1.3rem; display: flex; gap: 1.3rem;
+}
+
+.twitter:hover,
+.instagram:hover {
+    opacity: 0.5;
+}
+/*style css class="ma_footer" fin*/
+
+/*style css bouton retour en haut debut*/
+#back-to-top {
+    border: none; background-color: blue;
+    color: white; position: fixed; right: 20px; bottom: 20px;
+}
+
+#back-to-top:active {
+    background-color: white; color: blue;
+    border: 1px solid red;
+}
+/*style css bouton retour en haut fin*/
+
+/*PARTIE CSS PAGE APROPOS.HTML*/
+/*style css class="ma-section-apropos" debut*/
+.ma-section-apropos {
+    border: 1px solid red;
+}
+
+.ma-section-apropos {
+    background-color: #1F2039; margin-top: 1.3rem;
+}
+
+.container_apropos {
+    display: flex; flex-direction: column; gap: 30px;
+}
+
+.titre-niveau1-apropos {
+    color: #A5B4FC; margin-top: 30px;
+}
+
+.para-apropos, .mes_listes {
+    font-size: 18px;
+}
+
+.titre-niveau1-apropos, .titre_niveauhh2 {
+    text-align: center;
+}
+
+.btn2 {
+    display: block; margin: auto; margin-top: 30px;
+    width: 180px; height: 50px; border-radius: 35px;
+    border: none; color: white; background-color: #8484B4;
+    cursor: pointer; font-size: 16px;
+}
+
+.mes_listes {
+    margin-left: 30px;
+}
+
+.titre_niveauhh2 {
+    color: white;
+}
+
+.para-apropos, .mes_listes {
+    color: #F9F8FF;
+}
+
+.titre_niveauhhh2 {
+    text-align: center;
+}
+/*style css class="ma-section-apropos" fin*/
+
+/*style css tableau debut*/
+table {
+    margin-top: 15px;
+}
+
+.titre_niveauhhh2 {
+    margin-top: 3.125rem;
+}
+
+.titre_niveauhhh2, th {
+    color: white;
+}
+
+td {
+    color: #eaeaf0;
+}
+
+table, th, td {
+    border-collapse: collapse; border: 1px solid #A5B4FC;
+}
+
+.colonne1 {
+    width: 450px;
+}
+
+.colonne2 {
+    width: 225px;
+}
+
+.colonne3 {
+    width: 325px;
+}
+
+.colonne1, .colonne2,
+.colonne3 {
+    height: 50px;
+}
+
+.cellule_normale {
+    height: 150px; text-align: center;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
+}
+/*style css tableau fin*/
+
+/*STYLE CSS MOBILE-FIRST FIN*/
+
+/*STYLE CSS TABLETTE DEBUT*/
+/*PARTIE CSS PAGE ACCUEIL.HTML*/
+/*style css class="ma_header" debut*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    *,
+    *::before,
+    *::after {
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    #burger-toggle, .burger {
+        display: none;
+    }
+
+    .ma_header {
+        display: flex; align-items: center; justify-content: space-between;
+        margin-top: 1.3rem;
+    }
+
+    .list-non-ordonnee {
+        list-style-type: none;
+    }
+
+    .menu {
+        display: flex; gap: 1.3rem; font-size: 1.3rem;
+        margin-right: 1.3rem;
+    }
+
+    .lien_logo {
+        margin-left: 1.3rem;
+    }
+
+    .lien_logo:hover {
+        opacity: 0.5;
+    }
+
+    .lien_menu {
+        text-decoration: none; color: #242424;
+    }
+
+    .lien_menu:hover {
+        text-decoration: underline;
+    }
+
+    /*PARTIE CSS PAGE APROPOS.HTML*/
+    .colonne1 {
+        width: 455px;
+    }
+
+    .colonne2 {
+        width: 238px;
+    }
+
+    .colonne3 {
+        width: 330px;
+    }
+}
+/*style css class="ma_header" fin*/
+
+/*style css bouton retour en haut debut*/
+#back-to-top {
+    border: none; background-color: blue; padding: 10px 20px;
+    color: white; position: fixed; right: 20px; bottom: 20px;
+}
+
+#back-to-top:active {
+    background-color: white; color: blue;
+    border: 1px solid red;
+}
+/*style css bouton retour en haut fin*/
+/*STYLE CSS TABLETTE FIN*/
+
+/*STYLE CSS DESKTOP DEBUT*/
+
+/*PARTIE CSS PAGE ACCUEIL.HTML*/
+/*style css class="ma_header" debut*/
+@media screen and (min-width: 1025px) {
+    *,
+    *::before,
+    *::after {
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    .list-non-ordonnee {
+    list-style-type: none;
+}
+
+.ma_header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: 1.3rem;
+}
+
+.menu {
+    display: flex; gap: 1.6rem; margin-right: 3.8rem;
+}
+
+.lien_menu {
+    font-size: 1.3rem; color: #242424;
+    text-decoration: none;
+}
+
+.lien_menu:hover {
+    text-decoration: underline;
+}
+
+.lien_logo {
+    margin-left: 3.8rem;
+}
+
+.lien_logo:hover {
+    opacity: 0.5;
+}
+
+#burger-toggle, .burger {
+    display: none;
+}
+/*style css class="ma_header" fin*/
+
+/*style css class="container" debut*/
+.container {
+    flex-direction: row;
+}
+
+.titre-para-btn, .photo {
+    margin: 5rem;
+}
+
+.titre-para-btn {
+    display: flex; gap: 1.562rem;
+}
+
+.btn1 {
+    margin: 0; width: 40%; height: 60px;
+}
+
+.titre-niveau1-accueil, .para_accueil {
+    text-align: left;
+}
+
+.titre-niveau1-accueil {
+    width: 348px;
+}
+
+.para_accueil {
+    width: 490px;
+}
+/*style css class="container" fin*/
+
+
+/*style css class="ma_section" debut*/
+.ma_section {
+    flex-direction: row; flex-wrap: wrap;
+    justify-content: center;
+}
+/*style css class="ma_section" fin*/
+
+/*style css class="formulaire" debut*/
+.formulaire {
+    background-color: #1F2039; display: flex; flex-direction: column;
+    align-items: center; margin-top: 3.12rem; height: 550px; color: white;
+}
+
+form {
+    display: flex; flex-direction: column; margin-top: 3.12rem;
+    gap: 15px;
+}
+
+.titre_niveauh2 {
+    text-align: center; margin-top: 3.12rem;
+}
+
+.nomEmail {
+    display: flex; gap: 15px; justify-content: center;
+}
+
+input[type="text"] {
+    width: 493px; height: 40px; margin-top: 0.94rem;
+}
+
+input[type="submit"] {
+    display: block; margin: auto; width: 190px; height: 50px;
+    border-radius: 25px; margin-top: 0.94rem; border: none;
+    font-size: 1.125rem; color: white; background-color: #8585B6;
+}
+
+input[type="submit"]:hover {
+    background-color: #6b6bb9;
+}
+
+label {
+    font-size: 1.25rem;
+}
+/*style css class="formulaire" fin*/
+
+/*style css class="ma_footer" debut*/
+.ma_footer {
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+.reseaux_socio {
+    margin-right: 3.8rem; display: flex; gap: 1.6rem;
+}
+
+.twitter:hover,
+.instagram:hover {
+    opacity: 0.5;
+}
+/*style css class="ma_footer" fin*/
+
+/*style css bouton retour en haut debut*/
+#back-to-top {
+    border: none; background-color: blue;
+    padding: 10px 20px; position: fixed; color: white;
+    right: 20px; bottom: 20px;
+}
+
+#back-to-top:active {
+    background-color: white; color: blue;
+    border: 1px solid red;
+}
+/*style css bouton retour en haut fin*/
+
+/*PARTIE CSS PAGE APROPOS.HTML*/
+/*style css class="ma-section-apropos" debut*/
+.ma-section-apropos {
+    background-color: #1F2039; margin-top: 1.3rem;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 3.125rem;
+}
+
+.container_apropos {
+    width: 61%; display: flex; flex-direction: column;
+    gap: 30px; border-right: 1px solid #8E86B5;
+    border-bottom: 1px solid #8E86B5;
+}
+
+.btn2 {
+    margin-top: 1.875rem; width: 200px; height: 50px;
+    border-radius: 35px; border: none; cursor: pointer;
+    background-color: #8687B9; color: white;
+}
+
+.btn2:hover {
+    background-color: #5d5fb1;
+}
+
+.titre-niveau1-apropos {
+    color: #A5B4FC; font-size: 2.62rem;
+}
+
+.titre-niveau1-apropos, .titre_niveauhh2 {
+    text-align: center;
+}
+
+.para-apropos, .mes_listes {
+    color: #F9F8FF;
+}
+
+.para-apropos, .mes_listes {
+    font-size: 1.19rem;
+}
+
+.btn2 {
+    font-size: 1rem;
+}
+
+.mes_listes {
+    margin-left: 2.5rem;
+}
+
+.titre_niveauhh2 {
+    color: white; font-size: 1.75rem;
+}
+/*style css class="ma-section-apropos" fin*/
+}
+/*STYLE CSS DESKTOP FIN*/
+
+
+
+
+
+/*PARTIE CSS PAGE PORTFOLIO.HTML*/
+/*STYLE CSS DESKTOP DEBUT*/
+@media screen and (min-width: 1025px) {
+    /*style css class="ma_header" debut*/
+    .menu {
+        list-style-type: none;
+    }
+    /*style css class="ma_header" fin*/
+
+    /*style css class="container_portfolio" debut*/
+    .container_portfolio {
+        background-color: #1F2039; color: #A0AFF6; height: 12.5rem;
+        margin-top: 1.3rem; display: flex; align-items: center;
+    }
+
+    .titre-niveau1-portfolio {
+        margin-left: 3.125rem; font-size: 4rem;
+    }
+    /*style css class="container_portfolio" fin*/
+
+    .titre-niveau2-portfolio {
+        margin-top: 3.125rem; margin-left: 3.125rem;
+        font-size: 1.75rem;
+    }
+
+    /*style css class="section1-portfolio" debut*/
+    .section1-portfolio {
+        display: grid; grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 18.75rem 18.75rem 18.75rem; gap: 15px;
+        margin-top: 3.125rem; margin-right: 3.125rem; margin-left: 3.125rem;
+    }
+
+    .mes_paysages {
+        width: 100%; height: 100%;
+    }
+    /*style css class="section1-portfolio" fin*/
+
+    .titre-niveauh2-portfolio {
+        margin-left: 3.125rem; font-size: 1.75rem;
+    }
+
+    /*style css class="section2-portfolio" debut*/
+    .section2-portfolio {
+        display: grid; grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 18.75rem 18.75rem 18.75rem; gap: 15px; margin-top: 3.125rem;
+        margin-top: 3.125rem; margin-right: 3.125rem; margin-left: 3.125rem;
+    }
+
+    .mes_portraits {
+        width: 100%; height: 100%;
+    }
+    /*style css class="section2-portfolio" fin*/
+}
+/*STYLE CSS DESKTOP FIN*/
+
+
+
+
+/*PARTIE CSS PAGE PORTFOLIO.HTML*/
+/*STYLE CSS MOBILE-FIRST FIN*/
+/*style css class="ma_header" debut*/
+@media screen and (max-width: 768px) {
+    .ma_header {
+        border: 1px solid red;
+    }
+}
+/*style css class="ma_header" fin*/
+/*STYLE CSS MOBILE-FIRST FIN*/
